@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react"; //tsdrpfc
 
-const Header = dynamic(() => import("../component/header"), { ssr: false });
+const Header = dynamic(() => import("../components/header"), { ssr: false });
 export interface AboutPageProps {}
 
 export default function AboutPage(props: AboutPageProps) {
